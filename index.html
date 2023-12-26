@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            background-color: beige;
+            height: 60px;
+            line-height: 60px;
+            
+            width: 1520px;
+        }
+        img{
+        
+            width: 500px;
+            
+        }
+        body{background-color: cadetblue;}
+        
+        @media screen and (max-width:380px){
+            #nav{ width: 350px;
+                flex-direction: column;
+                background-color: aqua;
+                height: 400px;
+                font-size: 20px;
+                text-align: center;
+            }
+            body{background-color: azure;}
+            img{
+                width: 350px;
+                
+            }
+        }
+        @media screen and (min-width:380px) and (max-width:760px){
+            #nav {width:650px;
+                flex-direction: column;
+                background-color: chocolate;
+                height: 600px;
+                text-align: center;
+                
+            
+            }
+            body{
+                background-color: darkolivegreen;
+            }
+            img{
+                width: 500px;
+                margin-left: 50px;
+            }
+        }
+        @media screen and (min-width:765px) and (max-width:1020px){
+            #nav {width: 770px;
+                flex-direction: column;
+                background-color: green;
+                height: 500px;
+                text-align: center;
+            }
+            body{
+                background-color: yellow;
+            }
+            img{
+                margin-left: 30px;
+                width: 700px;
+                
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+    <div>SOME NAME</div>
+    <div>Portfolio</div>
+    <div>About me</div>
+    <div>Contact</div>
+    <div>Message</div>
+    </div>
+<div>
+    <img src="./pic3.jpg">
+    <img src="./pic2.jpg">
+    <img src="./pic4.jpg">
+    </div>
+    
+</body>
+</html>
